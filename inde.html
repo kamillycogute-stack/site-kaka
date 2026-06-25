@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Notícias: Fato ou Fake?</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Fato ou Fake? Clique para descobrir!</h1>
+    </header>
+
+    <main class="container">
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="https://chocolateriatecnica.com.br/wp-content/uploads/2024/08/chocolate-branco-2.jpg" alt="Chocolate ao sol" class="card-img">
+                    <h2>Ciêntistas criam chocolate que não derrete no sol e mantém o sabor original</h2>
+                </div>
+                <div class="card-back fake">
+                    <h3>❌ FALSO</h3>
+                    <p>Embora existam pesquisas para tornar o chocolate mais resistente ao calor, não existe um chocolate comercial que "não derrete no sol mantendo o sabor original". Trata-se de um mito exagerado sobre testes de laboratório.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="https://static.historiadomundo.com.br/2025/06/trecho-da-muralha-da-china-fotografado-em-2023.jpg" alt="Grande Muralha da China" class="card-img">
+                    <h2>A Grande Muralha da China não pode ser vista do espaço a olho nu</h2>
+                </div>
+                <div class="card-back fato">
+                    <h3>✅ FATO</h3>
+                    <p>A NASA confirmou que a muralha é muito estreita e tem cores que se misturam com o solo, tornando impossível enxergá-la a olho nu da órbita terrestre sem equipamentos especiais.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card" onclick="flipCard(this)">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="https://www.correiobraziliense.com.br/cbradar/wp-content/uploads/2025/06/pessoa-caminhando_1749590692499.jpg" alt="Pessoa caminhando" class="card-img">
+                    <h2>Caminhar 15 minutos logo após as refeições ajuda a reduzir o açúcar no sangue</h2>
+                </div>
+                <div class="card-back fato">
+                    <h3>✅ FATO</h3>
+                    <p>Estudos publicados em revistas científicas de saúde mostram que leves caminhadas pós-refeição ajudam os músculos a absorverem a glicose, diminuindo os picos de açúcar no sangue.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
